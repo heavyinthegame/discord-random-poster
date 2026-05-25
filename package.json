@@ -1,0 +1,19 @@
+{
+  "name": "discord-random-poster",
+  "version": "1.0.0",
+  "description": "Randomly posts messages from posts.json to a Discord channel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "post:scheduled": "node scripts/scheduled-post.js",
+    "post:once": "node scripts/scheduled-post.js --force",
+    "check": "node --check index.js && node --check scripts/scheduled-post.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.26.4",
+    "dotenv": "^17.4.2"
+  }
+}
